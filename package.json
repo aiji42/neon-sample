@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --no-notify --respawn --transpile-only src/server",
-    "benchmark": "ts-node src/benchmark"
+    "benchmark": "ts-node src/benchmark",
+    "postinstall": "prisma generate"
   },
   "prettier": {
     "semi": false,
