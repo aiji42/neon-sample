@@ -24,6 +24,6 @@ jobs:
       - name: Install dependencies 💿
         run: yarn install --frozen-lockfile
       - name: Run Benchmark 🧪
-        run: yarn benchmark 100 500 1000 3000 5000 10000
+        run: yarn benchmark 100 500 1000 5000 10000
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
