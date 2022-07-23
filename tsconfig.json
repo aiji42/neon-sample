@@ -4,7 +4,8 @@
     "rootDir": "src",
     "lib": ["esnext"],
     "strict": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "skipLibCheck": true
   },
   "include": ["src/**/*"]
 }
