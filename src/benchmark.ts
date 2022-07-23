@@ -18,6 +18,7 @@ const main = async () => {
   const [, , ...ns] = process.argv
   for (const n of ns) {
     const connections = Number(n)
+    await new Promise((r) => setTimeout(r,3000))
     console.log('\nConnection:\t', connections)
     const samples = await Promise.all([...Array(connections)].map(loadData))
 
